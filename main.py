@@ -49,6 +49,8 @@ class SimpleNotepad:
                 print(
                     f'File saved to {self.current_file}'
                 )
+        else:
+            self.saveas_file()
 
     def load_file(self) -> None:
         file_path: str = filedialog.askopenfilename(defaultextension='.txt',
