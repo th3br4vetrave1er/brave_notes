@@ -47,7 +47,7 @@ class SimpleNotepad:
             with open(self.current_file, 'w', encoding='utf-8') as file:
                 file.write(self.text_area.get(1.0, tk.END))
                 print(
-                    f'File saved to {self.current_file}'
+                    'File saved.'
                 )
         else:
             self.saveas_file()
